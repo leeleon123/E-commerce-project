@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*header section*/
+header.navbar {
+	width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #D2B48C, #F4A460, #DEB887);
+	background-size: cover;
+  padding: 15px 50px;
+	height:125px;
+  position: static;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Brand Logo */
+.logo img{
+height:150px;
+	width:auto;
+	border-radius: 50px;
+}
+
+/* Navigation */
+.navbar{
+	 width: 100%;              /* always spans the full page */
+  background-color: #351C03;
+}
+
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 25px;
+}
+
+.navbar ul li a {
+  text-decoration:none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color:hotpink; /* coffee pink effect */
+}
+
+
+    body {
+      font-family: Arial, sans-serif;
+	  background-size: cover;
+		background-color: rgba(1,1,1,0.79);
+
+      margin: 0;
+      padding: 0;
+
+    }
+.video-background {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.btn {
+      background-color: #674C2F;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.6s ease, transform 0.8s ease;
+    }
+
+.btn:active {
+  background-color: #6D350D;
+  transform: scale(1.00);
+}
+.text{
+	text-align: left;
+	text-decoration:none;
+  font-size: 2rem;
+  font-weight:600;
+  color: white;
+	padding-left:10%;
+}
+#splash-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: sandybrown; /* background during splash */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease, transform 1.5s ease;
+}
+
+/* Logo styling */
+#splash-logo img {
+  width: 500px;
+  height: 500px;
+  transition: transform 3s ease, opacity 3s ease;
+}
+
+/* When splash is active (for animation) */
+#splash-logo.active img {
+  transform: scale(100);   /* expand logo */
+  opacity: 0;
+}
+
+#splash-logo.active {
+  opacity: 0;             /* fade out splash */
+  pointer-events: none;   /* allow clicks after animation */
+}

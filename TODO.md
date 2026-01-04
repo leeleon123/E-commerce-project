@@ -1,0 +1,5 @@
+- [x] Rewrite Login.html as proper HTML structure with DOCTYPE, html, head, body, navbar, and login form posting to userLogin.php
+- [x] Test the login page by opening Login.html in a browser to ensure it displays correctly
+- [x] Rewrite cart.html as proper HTML structure with DOCTYPE, html, head, body, navbar, and cart section linking to cart.css
+- [x] Rewrite Register.html as proper HTML structure with DOCTYPE, html, head, body, navbar, and register form posting to userRegister.php linking to Register.css
+- [ ] Test cart.html and Register.html by opening them in a browser

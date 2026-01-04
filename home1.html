@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home </title>
+<link href="home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header class="navbar">
+  <div class="logo">
+	<img src="logo.jpeg" alt="Brew It">
+	</div>
+			
+  <nav class="navbar">
+    <ul>
+      <li><a href="home1.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+		<li><a href="about.html">About</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="cart.html">Cart</a></li>
+	  
+    </ul>
+  </nav>
+	</header>
+	
+	<div class="video-background">
+  <video autoplay muted loop playsinline>
+    <source src="brewing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+	<div class="text">
+		<h1> Start Brewing Your Coffee on Our Paradise</h1>
+	<button class="btn" onclick="window.location.href='product.html'">
+  Start Brewing
+</button>
+			
+		
+		
+		</div>
+	
+	<div id="splash-logo">
+  <img src="gif2.gif" alt="Logo">
+</div>
+	<script>
+// Function to trigger splash animation on link click
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();        // prevent immediate navigation
+    const url = this.href;
+    
+    const splash = document.getElementById("splash-logo");
+    splash.classList.add("active"); // trigger animation
+
+    // Wait for animation to finish, then navigate
+    setTimeout(() => {
+      window.location.href = url;
+    }, 1000); // match the CSS transition duration
+  });
+});
+
+// Optional: hide splash on page load after a short delay
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("splash-logo").classList.add("active");
+  }, 300); // short delay for fade-in effect
+});
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About Us</title>
+<link href="product page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="navbar">
+  <div class="logo">
+    <img src="logo.jpeg" alt="Brew It">
+  </div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="home1.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="cart.html">Cart <span id="cart-count"></span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>About Us</h2>
+  <p>Welcome to Brew It! We are passionate about delivering the finest coffee and beverages to our customers. Our mission is to provide quality products with excellent service in a cozy and welcoming environment.</p>
+  <p>Our team carefully selects the best ingredients and crafts each drink with love and expertise. Whether you're a coffee aficionado or just looking for a refreshing drink, Brew It has something for everyone.</p>
+  <p>Thank you for choosing Brew It. We look forward to serving you!</p>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <h1>Contact Us</h1>
+    <li>Email: tharanrajitora@gmail.com</li>
+    <li>Telephone: +94767272097</li>
+  </div>
+</footer>
+
+<script>
+  // Update cart count in navbar
+  function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+    let countSpan = document.getElementById('cart-count');
+    if (totalCount > 0) {
+      countSpan.textContent = totalCount;
+      countSpan.style.display = 'inline-block';
+    } else {
+      countSpan.textContent = '';
+      countSpan.style.display = 'none';
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", updateCartCount);
+</script>
+
+</body>
+</html>

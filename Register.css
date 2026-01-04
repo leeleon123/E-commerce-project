@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+header.navbar {
+	width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #D2B48C, #F4A460, #DEB887);
+	background-size: cover;
+  padding: 15px 50px;
+	height:125px;
+  position: static;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Brand Logo */
+.logo img{
+height:150px;
+	width:auto;
+	border-radius: 50px;
+}
+
+/* Navigation */
+.navbar{
+	 width: 95%;              /* always spans the full page */
+  background-color: #351C03;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 25px;
+}
+
+.navbar ul li a {
+  text-decoration:none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color:hotpink; /* coffee pink effect */
+}
+
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background:url("back22.jpg");
+	  background-size: cover;
+		background-color:sandybrown;
+		
+      margin: 0;
+      padding: 0;
+     
+    }
+
+.register-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 2rem auto;
+        }
+
+        .register-form h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #8D085C;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #45a049;
+        }
+.container{
+	background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 2rem auto;
+}
+.text{
+	text-align: justify;
+	text-decoration:none;
+  font-size: 2rem;
+  font-weight:600;
+  color: white;
+	padding-right:50%;
+}
+
